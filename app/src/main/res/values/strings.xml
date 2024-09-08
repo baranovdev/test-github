@@ -10,7 +10,7 @@
     <string name="try_to_find_something_else">Try to find something else</string>
     <string name="username_or_repository">Username or repository</string>
     <string name="back">back</string>
-    <string name="ellipses">...</string>
+    <string name="ellipses">…</string>
     <string name="unknown_exception">Unknown exception</string>
     <string name="file">file</string>
     <string name="folder">folder</string>
