@@ -16,16 +16,19 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_search"
             android:layout_width="0dp"
+            style="@style/Base.Theme.TestGithub"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            app:shapeAppearance="@style/RoundedTextInput"
             android:hint="@string/username_or_repository"
             android:layout_weight="6">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="text"
+                android:inputType="textNoSuggestions"
+                android:fontFamily="@font/golos_regular"
                 android:imeOptions="actionSearch"
                 android:maxLines="1"
                 />

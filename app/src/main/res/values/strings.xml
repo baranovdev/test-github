@@ -3,9 +3,9 @@
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="retry">Retry</string>
     <string name="forks">Forks</string>
-    <string name="input_length_error">3 symbols required</string>
+    <string name="input_length_error">3 symbols are required</string>
     <string name="try_to_find_something">Try to find something</string>
-    <string name="empty_state_subtitle">Write your request into search field and click search button</string>
+    <string name="empty_state_subtitle">Write your request into search field and tap search button</string>
     <string name="nothing_found">Nothing found</string>
     <string name="try_to_find_something_else">Try to find something else</string>
     <string name="username_or_repository">Username or repository</string>

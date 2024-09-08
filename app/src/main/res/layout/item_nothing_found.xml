@@ -13,13 +13,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/lav_empty_state"
+        <ImageView
             android:layout_width="256dp"
             android:layout_height="256dp"
-            app:lottie_autoPlay="true"
-            app:lottie_rawRes="@raw/nothing_found_animation"
-            android:layout_gravity="center"
+            android:contentDescription="@string/nothing_found"
+            android:src="@drawable/ic_nothing_found"
             />
 
         <TextView

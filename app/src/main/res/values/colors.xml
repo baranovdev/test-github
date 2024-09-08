@@ -5,4 +5,12 @@
     <color name="score_color">#FFEB3B</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#C3C3C3</color>
+
+    <color name="primary_color">#E0A28A</color>
+    <color name="primary_variant">#BDA196</color>
+    <color name="on_primary_color">#FBDACC</color>
+    <color name="on_primary_color_alpha">#4DFBDACC</color>
+    <color name="secondary_color">#248C7D</color>
+    <color name="secondary_variant">#54C3B3</color>
+    <color name="on_secondary_color">#A1EBE0</color>
 </resources>
