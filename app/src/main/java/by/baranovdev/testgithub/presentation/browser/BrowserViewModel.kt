@@ -48,7 +48,6 @@ class BrowserViewModel @Inject constructor(
                 }.onFailure { e ->
                     _error.postValue(e.localizedMessage)
                 }
-                Log.e("PATH RESULT:", it.toString())
                 _isLoading.postValue(false)
             }
         }

@@ -34,17 +34,13 @@ class GithubRepositoryImpl @Inject constructor(
                 it?.toUiModel()
             }
         } catch (e: Exception) {
-            Log.e("GET_PATH", e.message.toString())
             emptyList<PathEntity>()
         } finally {
             emptyList<PathEntity>()
         }
 
-        Log.e("pathDBEList", pathDBEList.toString())
         return if (pathDBEList.isNotEmpty()) pathDBEList else {
-            Log.e("Response", params.path)
             val response = PathResponseDto(githubApi.getPath(params.path))
-            Log.e("Response", response.toString())
             response.toDatabaseEntities(parentUrl = params.path).forEach {
                 pathDao.insert(
                     it
