@@ -13,7 +13,7 @@ data class UserResponseDto(
 data class UserItem(
 
 	@field:SerializedName("score")
-	val score: Any? = null,
+	val score: Double? = null,
 
 	@field:SerializedName("avatar_url")
 	val avatarUrl: String? = null,
@@ -30,6 +30,6 @@ data class UserItem(
 	@field:SerializedName("type")
 	val type: String? = null,
 
-	@field:SerializedName("url")
+	@field:SerializedName("html_url")
 	val url: String? = null
 )

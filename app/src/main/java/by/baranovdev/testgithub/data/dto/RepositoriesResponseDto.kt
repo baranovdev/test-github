@@ -13,8 +13,8 @@ data class RepositoriesResponseDto(
 
 data class RepositoryItem(
 
-	@field:SerializedName("score")
-	val score: Double? = null,
+	@field:SerializedName("forks_count")
+	val forksCount: Int? = null,
 
 	@field:SerializedName("stargazers_count")
 	val stargazersCount: Int? = null,
@@ -38,5 +38,8 @@ data class RepositoryItem(
 	val watchersCount: Int? = null,
 
 	@field:SerializedName("url")
-	val url: String? = null
+	val url: String? = null,
+
+	@field:SerializedName("contents_url")
+	val contentsUrl: String? = null
 )

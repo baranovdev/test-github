@@ -2,6 +2,7 @@ package by.baranovdev.testgithub.di
 
 import by.baranovdev.testgithub.BuildConfig
 import by.baranovdev.testgithub.data.api.GithubApi
+import by.baranovdev.testgithub.data.interceptor.ResponseInterceptor
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -16,6 +17,7 @@ object NetworkModule {
     @Singleton
     fun provideOkHttpClient(): OkHttpClient {
         return OkHttpClient.Builder()
+            .addInterceptor(ResponseInterceptor())
             .build()
     }
 

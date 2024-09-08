@@ -1,7 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.jetbrains.kotlin.kapt)
+    alias(libs.plugins.google.ksp)
+    alias(libs.plugins.androidx.room)
+    alias(libs.plugins.androidx.navigation.safeargs)
 }
 
 android {
@@ -30,13 +32,14 @@ android {
             )
         }
         debug {
-            isMinifyEnabled = true
-
+            isMinifyEnabled = false
         }
     }
 
     buildFeatures {
         buildConfig = true
+        viewBinding = true
+//        dataBinding = true
     }
 
     compileOptions {
@@ -45,6 +48,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    room {
+        schemaDirectory("$projectDir/schemas")
     }
 }
 
@@ -66,8 +73,8 @@ dependencies {
     //Dagger
     implementation(libs.dagger.android)
     implementation(libs.dagger.android.support)
-    kapt(libs.dagger.android.processor)
-    kapt(libs.dagger.android.compiler)
+    ksp(libs.dagger.android.processor)
+    ksp(libs.dagger.android.compiler)
 
     //Gson
     implementation(libs.gson.converter)
@@ -76,4 +83,21 @@ dependencies {
     //Network
     implementation(libs.retrofit)
     implementation(libs.okhttp)
+
+    //Room
+    implementation(libs.room.runtime)
+    implementation(libs.room.androidx)
+    ksp(libs.room.compiler)
+
+    //Groupie
+    implementation(libs.recyclerview)
+    implementation(libs.groupie)
+    implementation(libs.groupie.viewbinding)
+    implementation(libs.groupie.kext)
+
+    //Picasso
+    implementation(libs.picasso)
+
+    //Lottie
+    implementation(libs.lottie)
 }
